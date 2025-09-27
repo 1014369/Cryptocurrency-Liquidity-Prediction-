@@ -1,0 +1,17 @@
+          Low-Level Design Document
+
+
+Low-Level Design Document
+
+1. Preprocessing (src/preprocessing.py)
+- load_and_clean_data(): Loads and merges CSVs, handles NaNs
+- scale_data(): Normalizes selected numerical columns
+
+2. Feature Engineering (src/feature_engineering.py)
+- add_features(): Adds moving average and liquidity ratio
+
+3. Model Training (src/model.py)
+- train_model(): Trains a GradientBoosting, evaluates, saves it
+
+4. Streamlit App (app/app.py)
+- Loads model, accepts user input, predicts liquidity ratio
